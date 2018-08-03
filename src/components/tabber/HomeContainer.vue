@@ -133,7 +133,22 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
 
+    }
+  },
+  methods : {
+    getAttentionData() {
+      this.$http.get('acb?id=1')
+      .then(result=> {
+        console.log(result.body)
+      })
+    }
+  },
+  created () {
+    this.getAttentionData();
+  }
 }
 </script>
 <style lang="scss" scoped>
