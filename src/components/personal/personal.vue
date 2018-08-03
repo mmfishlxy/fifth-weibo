@@ -11,88 +11,9 @@
         </div>
         <div class="title clearfix">
             <span class="span1" v-for="(item,index) in list" :key="index" :class="{actived:isactived==index}" @click="isactived=index,toggle('tab'+(index+1))">{{item.title}}</span>
-            <!-- <span class="span2">微博</span> -->
         </div>
         <div class="content">
             <component :is="currentView" keep-alive></component>
-            <!-- <ul class="wb">
-                <li>
-                    <div class="massage clearfix">
-                        <img src="../../../static/imges/header.png">
-                        <p class="p1">尼古拉斯赵四</p>
-                        <p class="p2">2018-7-6</p>
-                    </div>
-                    <p class="cont">我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                    </p>
-                    <div class="pinlun clearfix">
-                        <span class="mui-icon-extra mui-icon-extra-comment pin">评论</span>
-                        <span class="mui-icon-extra mui-icon-extra-like dian">点赞</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="massage clearfix">
-                        <img src="../../../static/imges/header.png">
-                        <p class="p1">尼古拉斯赵四</p>
-                        <p class="p2">2018-7-6</p>
-                    </div>
-                    <p class="cont">我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                    </p>
-                    <div class="pinlun clearfix">
-                        <span class="mui-icon-extra mui-icon-extra-comment pin">评论</span>
-                        <span class="mui-icon-extra mui-icon-extra-like dian">点赞</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="massage clearfix">
-                        <img src="../../../static/imges/header.png">
-                        <p class="p1">尼古拉斯赵四</p>
-                        <p class="p2">2018-7-6</p>
-                    </div>
-                    <p class="cont">我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                        我是微博内容我是微博内容我是微博内容我是微博内容我是微博内容
-                    </p>
-                    <div class="pinlun clearfix">
-                        <span class="mui-icon-extra mui-icon-extra-comment pin">评论</span>
-                        <span class="mui-icon-extra mui-icon-extra-like dian">点赞</span>
-                    </div>
-                </li>
-            </ul>
-            <ul class="zy">
-                <li>
-                    <h3>基本资料</h3>
-                    <span class="mui-icon mui-icon-arrowright"></span>
-                </li>
-                <li>
-                    <h5>信息</h5>
-                    <span>男</span>
-                    <span>59</span>
-                    <span>巨蟹</span>
-                    <span>西安</span>
-                </li>
-                <li>
-                    <h5>公司</h5>
-                    <span>其他</span>
-                </li>
-                <li>
-                    <h5>学校</h5>
-                    <span>西柚</span>
-                </li>
-                <li class="time">
-                    <h5>注册时间</h5>
-                    <span>2014-3-13</span>
-                </li>
-                <li>
-                    <h4>更新基本资料，方便大家了解你</h4>
-                </li>
-            </ul> -->
         </div>
     </div>
 </template>
