@@ -34,9 +34,9 @@ import router from './router/index.js'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //设置请求的根路径
-Vue.http.options.root='http://192.168.0.100:8080'
+Vue.http.options.root='http://192.168.0.125:8080'
 //全局设置发送的表单数据的格式
-Vue.http.options.emulateJSON = true
+Vue.http.options.emulateJSON = true;
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
