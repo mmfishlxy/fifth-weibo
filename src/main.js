@@ -16,6 +16,7 @@ var store=new Vuex.Store({
   }
 })
 import App from './App'
+// <<<<<<< HEAD
 // import router from './router'
 // 导入Mint-ui包 需要使用Mint-ui中的懒加载图标的把其全局导入
 import Mint from 'mint-ui'
@@ -31,12 +32,19 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 //导入自己路由组件匹配文件
 import router from './router/index.js'
+
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //设置请求的根路径
-Vue.http.options.root='http://192.168.0.122:8080'
+// Vue.http.options.root='http://192.168.0.122:8080'
 //全局设置发送的表单数据的格式
 Vue.http.options.emulateJSON = true;
+
+
+import '../static/mui/css/mui.css'
+import '../static/mui/css/icons-extra.css'
+import '../static/css/common.css'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
