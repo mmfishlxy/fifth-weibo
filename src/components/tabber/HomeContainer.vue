@@ -140,7 +140,7 @@ export default {
   },
   methods : {
     getAttentionData() {
-      this.$http.get('acb?id=1')
+      this.$http.get('add/test')
       .then(result=> {
         console.log(result.body)
       })
